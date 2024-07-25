@@ -1,0 +1,378 @@
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+    background-image: url("imagens/fundo-churrasqueira.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Fontes customizadas */
+  @font-face {
+    font-family: "Lexend Tera";
+    src: url("./fontes/fonte Lexend/LexendTera-VariableFont_wght.ttf");
+  }
+  
+  @font-face {
+    font-family: "Zuume Rough";
+    src: url("./fontes/fonte Zuume Rough/fontspring-demo-zuumerough-bold.otf");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* texto geral */
+  h2 {
+    font-family: "Zuume Rough", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  h3 {
+    font-family: "Zuume Rough", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  p {
+    font-family: "Lexend Tera", Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  /* cabeçalho */
+  #logo1 img {
+    height: 80px;
+    overflow: clip;
+    overflow-clip-margin: content-box;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    top: 0;
+    flex-wrap: nowrap;
+  }
+  
+  nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menuitem {
+    text-decoration: none;
+    color: #E6DEDD;
+    font-family: "Zuume Rough", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  .menuitem:hover {
+    text-decoration: underline solid #8F1D14 4px;
+  }
+  
+  /* banner */
+  #banner {
+    width: 100%;
+    background-image: url("./imagens/Banner costela.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    position: relative;
+  }
+  
+  #banner>div>p {
+    font-family: "Zuume Rough", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    text-align: center;
+    color: rgba(248, 157, 19, 0.85);
+    letter-spacing: 20px;
+    text-shadow: 4px 5px 5px #8F1D14;
+  }
+  
+  #banner>div>p#subtitulo {
+    font-family: "Lexend Tera", Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgba(248, 157, 19, 0.85);
+    letter-spacing: normal;
+  }
+  
+  #caixaTitulo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(48, 48, 48), transparent);
+    /* background-image: linear-gradient(to bottom, black, transparent); */
+  }
+  
+  /* Sobre nós */
+  
+  .sobreNos {
+    margin-top: 10px;
+    background-color: black;
+    color: #E6DEDD;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .parte1 {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    object-fit: contain;
+    flex: wrap-reverse;
+  }
+  
+  .parte1>img {
+    height: 350px;
+    border-radius: 20px;
+  }
+  
+  /* display carnes */
+  
+  /* div de fundo */
+  .containerSemTitulo {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(248, 157, 19, 0.9);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .containerSemTitulo>h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  .produtos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  /* cards individuais */
+  .card {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .card>img {
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  /* div de preço */
+  .price-tag {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #8F1D14;
+    position: absolute;
+    z-index: 4;
+    overflow: hidden;
+    top: -30px;
+    right: -20px;
+    color: #E6DEDD;
+    display: flex;
+    align-items: center;
+  }
+  
+  .price-tag>p {
+    transform: rotate(-25deg);
+  }
+  
+  footer {
+    background-color: rgba(143, 29, 20, 0.9);
+    color: #E6DEDD;
+    border-radius: 20px;
+  }
+  
+  /*customização formulário*/
+  #formulario {
+    background-color: #E6DEDD;
+    border-radius: 20px;
+  }
+  
+  #caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    color: black;
+    font-family: "Lexend Tera", Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  
+  #preferencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Radio Button*/
+  .radio {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid 2px #C3C3C3;
+  }
+  
+  .radio:hover {
+    border: solid 2px black;
+    cursor: pointer;
+  }
+  
+  .selecionado {
+    background-color: #8F1D14;
+  }
+  
+  .nao-selecionado {
+    background-color: white;
+  }
+  
+  span {
+    margin: 20px;
+  }
+  
+  label {
+    margin: 20px;
+  }
+  
+  /*select */
+  .custom-select {
+    position: relative;
+    margin: 20px;
+    width: 200px;
+    height: 60px;
+    border: 1px solid #8F1D14;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .selected-option {
+    display: block;
+    background-color: white;
+  }
+  
+  .opcoes {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: none;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  .opcao {
+    display: block;
+    padding: 10px;
+  }
+  
+  .opcao:hover {
+    background-color: #8F1D14;
+    border-radius: 5px;
+  }
+  
+  .arrow {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #8F1D14;
+    transition: 0.4s;
+  }
+  
+  .arrow-rotate {
+    transform: rotate(180deg);
+  }
+  
+  /*checkbox*/
+  #check {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    align-items: baseline;
+  }
+  
+  .linha {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: solid 2px #C3C3C3;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .checkbox:hover {
+    border: solid 2px black;
+  }
+  
+  .checkbox.checked {
+    background-image: url("/icons/check.svg");
+    background-size: 20px 20px;
+    background-position: center;
+    background-color: #8F1D14;
+  }
+  
+  .checkbox.indeterminate {
+    background-image: url("/icons/dash.svg");
+    background-size: 20px 20px;
+    background-position: center;
+    background-color: rgb(248, 157, 19);
+  }
+  
+  textarea {
+    border: 2px solid #8F1D14;
+    border-radius: 10px;
+    width: 650px;
+    resize: none;
+  }
+  
+  
+  button {
+    background-color: #8F1D14;
+    color: #E6DEDD;
+    border: 2px solid #E6DEDD;
+    width: 150px;
+    border-radius: 10px;
+    font-family: "Lexend Tera", Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+    }
